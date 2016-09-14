@@ -4,7 +4,7 @@ Dim strBasePath : strBasePath = left(WScript.ScriptFullName,(Len(WScript.ScriptF
 ConsoleOutputBlankLine(1)
 Call KillProcess("UFT.exe")
 Call KillProcess("QtpAutomationAgent.exe")
-
+Call KillProcess("iexplore.exe")
 
 'Create QTP object
 ConsoleOutputBlankLine(1)
@@ -44,6 +44,8 @@ QTP.Test.Settings.Resources.Libraries.Add("..\functions\Jenkins-Output.vbs")
 ConsoleOutput("Starting to run....")
 QTP.Test.Run qtpResultsOpt, FALSE, qtpParams
  
+ 
+'sdsdfsdfsdf
 'Write the result in the console
 ConsoleOutputBlankLine(2)
 While QTP.Test.isRunning
