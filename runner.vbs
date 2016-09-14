@@ -4,7 +4,7 @@ Dim strBasePath : strBasePath = left(WScript.ScriptFullName,(Len(WScript.ScriptF
 ConsoleOutputBlankLine(1)
 Call KillProcess("UFT.exe")
 Call KillProcess("QtpAutomationAgent.exe")
-Call KillProcess("iexplore.exe")
+
 
 'Create QTP object
 ConsoleOutputBlankLine(1)
